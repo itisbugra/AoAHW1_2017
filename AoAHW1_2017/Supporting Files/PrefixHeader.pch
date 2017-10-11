@@ -16,3 +16,7 @@ typedef int_fast64_t Int64;
 typedef Int64 Int;
 
 typedef char Char;
+
+typedef size_t Size;
+
+typedef bool Boolean;

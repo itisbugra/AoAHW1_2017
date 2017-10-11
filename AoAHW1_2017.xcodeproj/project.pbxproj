@@ -16,6 +16,8 @@
 		4D6043B01F8E6B5500BCCA3E /* LineParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2ACED1F8C18540041DFA2 /* LineParser.cpp */; };
 		4D6043B11F8E6B5800BCCA3E /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2ACDD1F8C100D0041DFA2 /* AppDelegate.cpp */; };
 		4D6043B21F8E6B5C00BCCA3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2ACDC1F8C100D0041DFA2 /* main.cpp */; };
+		5A3F5D641F8E83B100A4DE3F /* MergeSortingStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F5D621F8E83B100A4DE3F /* MergeSortingStrategy.cpp */; };
+		5AE6F2751F8E941200807FA1 /* InsertionSortingStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6F2731F8E941200807FA1 /* InsertionSortingStrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,14 +44,19 @@
 		4DD2ACDF1F8C100D0041DFA2 /* FileParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileParser.cpp; sourceTree = "<group>"; };
 		4DD2ACE01F8C100D0041DFA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4DD2ACE71F8C129F0041DFA2 /* FileNotOpenedException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileNotOpenedException.cpp; sourceTree = "<group>"; };
-		4DD2ACEA1F8C15770041DFA2 /* InvalidArgumentException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InvalidArgumentException.cpp; sourceTree = "<group>"; };
-		4DD2ACEB1F8C15770041DFA2 /* InvalidArgumentException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InvalidArgumentException.hpp; sourceTree = "<group>"; };
+		4DD2ACEA1F8C15770041DFA2 /* InvalidArgumentException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InvalidArgumentException.cpp; path = Application/InvalidArgumentException.cpp; sourceTree = "<group>"; };
+		4DD2ACEB1F8C15770041DFA2 /* InvalidArgumentException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = InvalidArgumentException.hpp; path = Application/InvalidArgumentException.hpp; sourceTree = "<group>"; };
 		4DD2ACED1F8C18540041DFA2 /* LineParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LineParser.cpp; sourceTree = "<group>"; };
 		4DD2ACEE1F8C18540041DFA2 /* LineParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LineParser.hpp; sourceTree = "<group>"; };
 		4DD2ACF11F8C1D5D0041DFA2 /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
 		4DD2ACF21F8C1D5D0041DFA2 /* Card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
 		4DD2ACF41F8C206C0041DFA2 /* CardMarshaller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CardMarshaller.cpp; sourceTree = "<group>"; };
 		4DD2ACF51F8C206C0041DFA2 /* CardMarshaller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CardMarshaller.hpp; sourceTree = "<group>"; };
+		5A3F5D601F8E7F9C00A4DE3F /* SortingStrategy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SortingStrategy.hpp; path = Algorithm/SortingStrategy.hpp; sourceTree = "<group>"; };
+		5A3F5D621F8E83B100A4DE3F /* MergeSortingStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MergeSortingStrategy.cpp; path = Algorithm/MergeSortingStrategy.cpp; sourceTree = "<group>"; };
+		5A3F5D631F8E83B100A4DE3F /* MergeSortingStrategy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MergeSortingStrategy.hpp; path = Algorithm/MergeSortingStrategy.hpp; sourceTree = "<group>"; };
+		5AE6F2731F8E941200807FA1 /* InsertionSortingStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InsertionSortingStrategy.cpp; path = Algorithm/InsertionSortingStrategy.cpp; sourceTree = "<group>"; };
+		5AE6F2741F8E941200807FA1 /* InsertionSortingStrategy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = InsertionSortingStrategy.hpp; path = Algorithm/InsertionSortingStrategy.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +89,10 @@
 		4DD2ACB81F8C0F200041DFA2 /* AoAHW1_2017 */ = {
 			isa = PBXGroup;
 			children = (
+				5A3F5D5B1F8E7F6D00A4DE3F /* Algorithm */,
 				4DD2ACF01F8C1D510041DFA2 /* Model */,
 				4DD2ACE91F8C15660041DFA2 /* Application */,
+				5A3F5D5A1F8E783500A4DE3F /* Error Handling */,
 				4DD2ACE21F8C102C0041DFA2 /* Parsing */,
 				4DD2ACE11F8C10140041DFA2 /* Supporting Files */,
 			);
@@ -117,10 +126,8 @@
 		4DD2ACE91F8C15660041DFA2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4DD2ACD91F8C100C0041DFA2 /* HomeworkAppDelegate.hpp */,
 				4DD2ACDB1F8C100C0041DFA2 /* HomeworkAppDelegate.cpp */,
-				4DD2ACEB1F8C15770041DFA2 /* InvalidArgumentException.hpp */,
-				4DD2ACEA1F8C15770041DFA2 /* InvalidArgumentException.cpp */,
+				4DD2ACD91F8C100C0041DFA2 /* HomeworkAppDelegate.hpp */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -134,6 +141,27 @@
 				4DD2ACF51F8C206C0041DFA2 /* CardMarshaller.hpp */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5A3F5D5A1F8E783500A4DE3F /* Error Handling */ = {
+			isa = PBXGroup;
+			children = (
+				4DD2ACEB1F8C15770041DFA2 /* InvalidArgumentException.hpp */,
+				4DD2ACEA1F8C15770041DFA2 /* InvalidArgumentException.cpp */,
+			);
+			name = "Error Handling";
+			sourceTree = "<group>";
+		};
+		5A3F5D5B1F8E7F6D00A4DE3F /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				5A3F5D601F8E7F9C00A4DE3F /* SortingStrategy.hpp */,
+				5A3F5D621F8E83B100A4DE3F /* MergeSortingStrategy.cpp */,
+				5A3F5D631F8E83B100A4DE3F /* MergeSortingStrategy.hpp */,
+				5AE6F2731F8E941200807FA1 /* InsertionSortingStrategy.cpp */,
+				5AE6F2741F8E941200807FA1 /* InsertionSortingStrategy.hpp */,
+			);
+			name = Algorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +223,10 @@
 			files = (
 				4D6043AB1F8E6B4400BCCA3E /* CardMarshaller.cpp in Sources */,
 				4D6043AC1F8E6B4600BCCA3E /* HomeworkAppDelegate.cpp in Sources */,
+				5A3F5D641F8E83B100A4DE3F /* MergeSortingStrategy.cpp in Sources */,
 				4D6043B21F8E6B5C00BCCA3E /* main.cpp in Sources */,
 				4D6043AF1F8E6B5100BCCA3E /* FileNotOpenedException.cpp in Sources */,
+				5AE6F2751F8E941200807FA1 /* InsertionSortingStrategy.cpp in Sources */,
 				4D6043AD1F8E6B4A00BCCA3E /* InvalidArgumentException.cpp in Sources */,
 				4D6043B11F8E6B5800BCCA3E /* AppDelegate.cpp in Sources */,
 				4D6043AE1F8E6B4D00BCCA3E /* FileParser.cpp in Sources */,
@@ -212,7 +242,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T33X5BPSF;
+				DEVELOPMENT_TEAM = DHCR3H4M55;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -221,7 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T33X5BPSF;
+				DEVELOPMENT_TEAM = DHCR3H4M55;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

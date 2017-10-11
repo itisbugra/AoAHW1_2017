@@ -15,13 +15,20 @@ auto
 LineParser::parse() const noexcept
 -> std::vector<std::string>
 {
-    std::istringstream stringStream(line);
-    std::string buffer;
+    std::string copy(line);
+    Size position = 0UL;
+    std::string token;
     std::vector<std::string> result;
     
-    while (stringStream >> buffer) {
-        result.push_back(buffer);
+    while ((position = copy.find(delimiter)) != std::string::npos) {
+        token = copy.substr(0, position);
+        
+        result.push_back(token);
+        
+        copy.erase(0, position + delimiter.length());
     }
+    
+    result.push_back(copy);
     
     return result;
 }
